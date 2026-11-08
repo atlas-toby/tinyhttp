@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="tr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>tinyhttp</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<main>
+    <h1>tinyhttp</h1>
+    <p>Bu sayfa, framework kullanmadan yazılmış bir Java HTTP sunucusundan geliyor.</p>
+
+    <h2>Denenebilecek adresler</h2>
+    <table>
+        <tr><th>Metot</th><th>Yol</th><th>Açıklama</th></tr>
+        <tr><td>GET</td><td><a href="/hello/Eren">/hello/{name}</a></td><td>Yol parametresi örneği</td></tr>
+        <tr><td>GET</td><td><a href="/api/time">/api/time</a></td><td>Sunucu saati, JSON</td></tr>
+        <tr><td>POST</td><td>/echo</td><td>Gövdeyi geri döndürür</td></tr>
+        <tr><td>GET</td><td><a href="/api/notes">/api/notes</a></td><td>Notları listeler</td></tr>
+        <tr><td>POST</td><td>/api/notes</td><td>Düz metin gövdeyle not ekler</td></tr>
+        <tr><td>GET / DELETE</td><td>/api/notes/{id}</td><td>Tek not getirir veya siler</td></tr>
+    </table>
+
+    <h2>Not ekle</h2>
+    <form id="note-form">
+        <input id="note-text" maxlength="500" placeholder="Not metni" required>
+        <button type="submit">Ekle</button>
+    </form>
+    <ul id="notes"></ul>
+</main>
+<script src="/app.js"></script>
+</body>
+</html>

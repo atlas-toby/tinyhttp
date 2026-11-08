@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+    background: #fbfaf7;
+    color: #1a1a1a;
+    font: 16px/1.6 Georgia, "Times New Roman", serif;
+}
+
+main {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 48px 24px;
+}
+
+h1, h2 {
+    font-family: "Courier New", monospace;
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 32px;
+    margin: 0 0 8px;
+}
+
+h2 {
+    font-size: 20px;
+    margin: 40px 0 16px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px 12px 8px 0;
+    border-bottom: 1px solid #d6d2c8;
+}
+
+td:first-child, td:nth-child(2) {
+    font-family: "Courier New", monospace;
+    white-space: nowrap;
+}
+
+a {
+    color: #0b4f9c;
+}
+
+form {
+    display: flex;
+    gap: 8px;
+}
+
+input, button {
+    font: inherit;
+    padding: 8px 12px;
+    border: 1px solid #1a1a1a;
+    background: #fff;
+}
+
+input {
+    flex: 1;
+}
+
+button {
+    background: #1a1a1a;
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0b4f9c;
+    border-color: #0b4f9c;
+}
+
+#notes {
+    padding-left: 20px;
+}
+
+#notes button {
+    margin-left: 12px;
+    padding: 0 8px;
+    font-size: 14px;
+}
